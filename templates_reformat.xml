@@ -204,13 +204,18 @@ ${cursor}</template><template autoinsert="true" context="com.powerflasher.fdt.ui
 {
 	return facade.retrieveProxy(${proxy_name}.NAME) as ${proxy_name};
 }
+
+private function get view():${view_name}
+{
+	return this.viewComponent as ${view_name}
+}
 		
 override public function listNotificationInterests():Array
 {
 	return [];
 }
 		
-override public function handleNotification(notification : INotification):void
+override public function handleNotification(notificaiton : INotification):void
 {
 			
 }</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="we override the execute command when created simplecommand." enabled="true" name="pure - simple command execute override">override public function execute(notification:${INotification}):void
