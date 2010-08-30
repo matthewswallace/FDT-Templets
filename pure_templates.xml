@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="override init contoller to kick things off" enabled="true" name="pure - facade initializeController">override protected function initializeController():void
+{
+	super.initializeController();
+	this.registerCommand(AppNotifications.APP_INIT, AppInitCommand);
+}
+${cursor}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="overrides and proxy getter" enabled="true" name="pure - mediator setup">private function get proxy():${proxy_name}
+{
+	return facade.retrieveProxy(${proxy_name}.NAME) as ${proxy_name};
+}
+		
+override public function listNotificationInterests():Array
+{
+	return [];
+}
+		
+override public function handleNotification(notificaiton : INotification):void
+{
+			
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="we override the execute command when created simplecommand." enabled="true" name="pure - simple command execute override">override public function execute(notification:${INotification}):void
+{
+	${cursor}
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="mediator and proxy names" enabled="true" name="pure - static NAME">public static const NAME:String="${enclosing_type}";</template></templates>
