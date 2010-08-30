@@ -210,7 +210,7 @@ override public function listNotificationInterests():Array
 	return [];
 }
 		
-override public function handleNotification(notificaiton : INotification):void
+override public function handleNotification(notification : INotification):void
 {
 			
 }</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="we override the execute command when created simplecommand." enabled="true" name="pure - simple command execute override">override public function execute(notification:${INotification}):void
